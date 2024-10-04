@@ -8,7 +8,7 @@
 
       <div>
         <label>Chip SRC: </label>
-        <input class="form-control" v-model="usuario.chipSrc"/>
+        <input class="form-control" v-model="usuario.chip" placeholder="/chip.png"/>
       </div>
 
       <div>
@@ -28,7 +28,7 @@
 
       <div>
         <label>Tipo de tarjeta SRC: </label>
-        <input class="form-control" v-model="usuario.tipo"/>
+        <input class="form-control" v-model="usuario.visa" placeholder="/visa.png"/>
       </div>
     </form>
 
@@ -55,13 +55,11 @@ export default {
     return {
       usuario: {
         titulo: "",
-        chipSrc: "",
         numero: "",
         fecha: "",
         nombre: "",
-        tipo: "",
-        chip: "/chip.png",
-        visa: "/visa.png"
+        chip: "",
+        visa: ""
       },
       continentes: ["Asia", "Europa", "África", "América", "Oceanía"], 
     };
